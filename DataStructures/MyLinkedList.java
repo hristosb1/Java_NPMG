@@ -1,3 +1,5 @@
+package DataStructures;
+
 public class MyLinkedList<T> {
     Node<T> first;
     Node<T> last;
@@ -25,8 +27,6 @@ public class MyLinkedList<T> {
             last = newNode;
             last.previous = temp;
         }
-
-
         size++;
     }
     public void add(T e, int index) {
@@ -39,12 +39,4 @@ public class MyLinkedList<T> {
             temp.previous = first;
         }
     }
-}
-
-
-class Node<T> {
-    public Node<T> previous;
-    public Node<T> next;
-    public T value;
-
-}
+};
